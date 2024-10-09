@@ -1,0 +1,42 @@
+openapi: 3.0.0
+info:
+  title: Example API
+  version: 'v0'
+  description: A basic endpoint that accepts a multipart/form-data encoded body with a file
+  contact:
+    name: Brandon Croft
+    email: brandon.croft@gmail.com
+    url: 'https://brandoncroft.com'
+  license:
+    name: Mozilla Public License 2.0
+    url: 'https://mozilla.org/en-US/MPL/2.0/'
+
+paths:
+  /api/endpoint:
+    post:
+      summary: Example multipart endpoint with binary format data
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                file:
+                  type: string
+                  format: binary
+      responses:
+        '204':
+          description: OK
+
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
