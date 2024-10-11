@@ -4,6 +4,7 @@ go 1.22.5
 
 require (
 	github.com/microsoft/kiota-abstractions-go v1.7.0
+	github.com/microsoft/kiota-bundle-go v1.0.0
 	github.com/microsoft/kiota-serialization-form-go v1.0.0
 	github.com/microsoft/kiota-serialization-json-go v1.0.8
 	github.com/microsoft/kiota-serialization-multipart-go v1.0.0
@@ -16,9 +17,9 @@ require (
 	github.com/go-logr/logr v1.4.2 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/google/uuid v1.6.0 // indirect
-	github.com/microsoft/kiota-bundle-go v1.0.0 // indirect
 	github.com/microsoft/kiota-http-go v1.4.5 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
+	github.com/rogpeppe/go-internal v1.13.1 // indirect
 	github.com/std-uritemplate/std-uritemplate/go v1.0.6 // indirect
 	github.com/stretchr/testify v1.9.0 // indirect
 	go.opentelemetry.io/otel v1.30.0 // indirect

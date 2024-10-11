@@ -1,6 +1,6 @@
 # Kiota Multipart Example
 
-A minimal repro meant to illustrate how to create a multipart request in go, although it doesn't work
+A minimal example of how to create a multipart request in go using kiota.
 
 ## Usage:
 
